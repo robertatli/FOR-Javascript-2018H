@@ -53,7 +53,7 @@
 4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
    - Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
    ```javascript
-   function daemi1(a, b) {
+   function daemi(a, b) {
     return a * b;
    }
    ```
@@ -65,9 +65,9 @@
    ```
    - functions geta verið notaðar sem gildi (value)
    ```javascript
-   function myFunction(a, b) {
+   function daemi(a, b) {
     return a * b;
    }
 
-   var x = myFunction(4, 3);
+   var x = daemi(4, 3);
    ```
