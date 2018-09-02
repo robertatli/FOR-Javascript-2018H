@@ -1,8 +1,8 @@
 # FORR3JS05DU Verkefni 1
 
 1. **Hvað er null og undefined?**
-   1. Undefined þýðir að breyta sem hefur verið búin til hefur ekki verið gefin gildi.
-   2. Null er gildi í breytu sem táknar ekkert gildi.
+   - Undefined þýðir að breyta sem hefur verið búin til hefur ekki verið gefin gildi.
+   - Null er gildi í breytu sem táknar ekkert gildi.
    
 2. **Hvað gerir _'use strict'_ í JavaScript kóða?**
 
@@ -51,19 +51,19 @@
    }
    ```
 4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
-   1. Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
+   - Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
    ```javascript
    function daemi1(a, b) {
     return a * b;
    }
    ```
-   2. Það er líka hægt að láta functionin setja sig sjálf í gang
+   - Það er líka hægt að láta functionin setja sig sjálf í gang
    ```javascript
    (function () {
     var x = "Hæ!!";      // ég kalla á mig sjálfa!
    })();
    ```
-   3. functions geta verið notaðar sem gildi (value)
+   - functions geta verið notaðar sem gildi (value)
    ```javascript
    function myFunction(a, b) {
     return a * b;
