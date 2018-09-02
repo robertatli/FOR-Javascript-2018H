@@ -71,3 +71,7 @@
 
    var x = daemi(4, 3);
    ```
+5. **Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?**
+   ```javascript
+   (function() { alert('Hello World'); })(); 
+   ```
