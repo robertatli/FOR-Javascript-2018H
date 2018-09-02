@@ -177,7 +177,7 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    });
    console.log(totals);
    ```
-10. **Leystu lið 25 í arrays í lesson 6 á Udacity**
+10.**Leystu lið 25 í arrays í lesson 6 á Udacity**
    ```javascript
    var numbers = [
     [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
