@@ -20,3 +20,33 @@
    console.log(window.a); // undefined
    console.log(window.b); // 'bbb'
    ```
+   Þau virka nákvæmlega eins þegar þau eru notuð svona í function.
+   ```javascript
+   function synidaemi() {
+       let a = 'aaa'; //function block scoped
+       var b = 'bbb'; //function block scoped
+   }
+   ```
+   hinsvegar 
+   ```javascript
+   function synidaemi() {
+    //daemi is *not* visible out here
+
+    for( let daemi = 0; daemi < 5; daemi++ ) {
+        //daemi is only visible in here (and in the for() parentheses)
+        //and there is a separate daemi variable for each iteration of the loop
+    }
+
+    //daemi is *not* visible out here
+   }
+
+   function synidaemi2() {
+       //daemi2 *is* visible out here
+
+       for( var daemi2 = 0; daemi2 < 5; daemi2++ ) {
+           //daemi2 is visible to the whole function
+       }
+
+       //daemi2 `*er*` sýnilegt hérna
+   }
+   ```
