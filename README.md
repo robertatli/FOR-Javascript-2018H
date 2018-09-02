@@ -124,4 +124,28 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    ```
    
    
-7. **Hver er munurinn á for, for-in og for-of lykkjum?**
+7. **Hver er munurinn á _for_, _for-in_ og _for-of_ lykkjum?**
+   - _for_ er notað fyrir venjulegar for loopur sem vinnur í gegnum kóðann sinn jafn oft og þú segir henni að gera það.
+   ```javascript
+   for (i = 0; i < 5; i++) {
+    text += "númer " + i + "<br>";
+   } // skrifar út 'númer 1' - 'númer 5' með break milli lína.
+   ```
+   - _for-in_ er notað til að loopa í gegnum eiginleika objecta og getur virkað með arrays
+   ```javascript
+   var person = {fname:"Robert", lname:"Atli", age:19}; 
+
+   var text = "";
+   var x;
+   for (x in person) {
+       text += person[x];
+   } //skrifar ut 'Robert Atli 19'
+   ```
+   - _for-of_ virkar ekki með objects og virkar betur með arrays heldur en _for-in_
+   ```javascript
+   const array = ['a', 'b', 'c', 'd'];
+   for (const stafur of array) {
+      console.log(stafur)
+   }
+   // Result: a, b, c, d
+   ```
