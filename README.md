@@ -77,15 +77,16 @@
    ```
 6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
 hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
-````javascript
-function foo(){
-   function bar() {
-      return 3;
+   - asd
+   ```javascript
+   function foo(){
+      function bar() {
+         return 3;
+      }
+      return bar();
+      function bar() {
+         return 8;
+      }
    }
-   return bar();
-   function bar() {
-      return 8;
-   }
-}
-alert(foo()); 
-```
+   alert(foo()); 
+   ```
