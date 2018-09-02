@@ -30,23 +30,23 @@
    hinsvegar 
    ```javascript
    function synidaemi() {
-    //daemi er *ekki* sýnilegt hérna
+    //daemi er ekki sýnilegt hérna
 
     for( let daemi = 0; daemi < 10; daemi++ ) {
         //daemi er bara sýnilegt hérna (og í for() hausinum)
         //og það er buin til ný daemi variable i hvert skipti sem for loopan spilast
     }
 
-    //daemi er *ekki* sýnilegt hérna
+    //daemi er ekki sýnilegt hérna
    }
 
    function synidaemi2() {
-       //daemi2 *er* sýnilegt hérna
+       //daemi2 er sýnilegt hérna
 
        for( var daemi2 = 0; daemi2 < 10; daemi2++ ) {
            //daemi2 is visible to the whole function
        }
 
-       //daemi2 *er* sýnilegt hérna
+       //daemi2 er sýnilegt hérna
    }
    ```
