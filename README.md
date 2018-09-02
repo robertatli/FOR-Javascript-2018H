@@ -4,9 +4,11 @@
    - Undefined þýðir að breyta sem hefur verið búin til hefur ekki verið gefin gildi.
    - Null er gildi í breytu sem táknar ekkert gildi.
    
+   
 2. **Hvað gerir _'use strict'_ í JavaScript kóða?**
 
    - Use strict segir browserinum að nota _Strict mode_ sem er minni og öruggari gerð af JavaScript.
+   
    
 3. **Hver er munurinn á _let_ og _var_?**
 
@@ -50,6 +52,7 @@
        // daemi2 er sýnilegt hérna
    }
    ```
+   
 4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
    - Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
    ```javascript
@@ -71,10 +74,12 @@
 
    var x = daemi(4, 3);
    ```
+   
 5. **Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?**
    ```javascript
    (function() { alert('Hello World'); })(); // þessi function kallar á sjálfa sig eins og var sýnt í dæmi 4.2 hér fyrir ofan.
    ```
+   
 6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
 hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
    - function eru fyrsta sem þýðandinn les og sýðan returnar hann útkomunni, og þar sem það er buið til bar() functionið tvisvar þá tekur seinna bar()-ið yfir fyrra og því returnar foo() 8.
@@ -113,4 +118,5 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    }
    alert(foo());
    ```
+   
 7. **Hver er munurinn á for, for-in og for-of lykkjum?**
