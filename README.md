@@ -149,3 +149,60 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    }
    // skrifar ut 'a, b, c, d'
    ```
+8. **Leystu lið 20 i arrays a Udacity**
+   ```javascript
+   var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+    19, 300, 3775, 299, 36, 209, 148, 169, 299,
+    6, 109, 20, 58, 139, 59, 3, 1, 139
+   ];
+
+   // Write your code here
+   test.forEach(function(num, index, array){
+     if(num % 3 === 0){
+       array[index] = num += 100; 
+     }
+
+   });
+
+   console.log(test);
+   ```
+9. **Hvað gerir .map() fylkjaaðferðin?**
+   - .map() skilar út nýjum array með sömu values og þú getur breytt þeim í leiðinni.
+   ```javascript
+   var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+
+   var totals = bills.map(function(bills){ //tekur bills arrayinn inn i .map() til að bua til nyjan array með sömu values
+      bills = bills * 1.15; // bætir við 15% tip ofan a hvert value i bills
+      return Number(bills.toFixed(2)); // returnar með tvemur aukastöfum
+   });
+   console.log(totals);
+   ```
+10. **Leystu lið 25 í arrays í lesson 6 á Udacity**
+   ```javascript
+   var numbers = [
+    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
+    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],
+    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],
+    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],
+    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],
+    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],
+    [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
+    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+   ];
+
+   // your code goes here
+   for (var row = 0; row < numbers.length; row++) {
+
+     for(var column = 0; column < numbers[row].length; column++) {
+       if (numbers[row][column] % 2 === 0) {
+         numbers[row][column] = "even";
+       }else {
+         numbers[row][column] = "odd"; 
+       }
+     }
+   }
+
+   console.log(numbers); 
+   ```
