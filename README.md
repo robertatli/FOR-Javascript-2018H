@@ -11,10 +11,10 @@
 3. **Hver er munurinn á _let_ og _var_?**
 
    - _let_ og _var_ eru bæði skilgreindar sem _variables_ og eru nokkuð líkar á þann hátt.
-     ```javascript
-     let a = 'aaa';  // sýnilegt allstaðar *globally*
-     var b = 'bbb'; // sýnilegt allstaðar *globally*
-     ```
+   ```javascript
+   let a = 'aaa';  // sýnilegt allstaðar *globally*
+   var b = 'bbb'; // sýnilegt allstaðar *globally*
+   ```
    - En t.d. þegar _var_ er notað Globally þá er það _variable_ bætt við í _window_ objectið, hinsvegar er _let_ ekki bætt við í _window_ objectið þegar það er notað eins.
    ```javascript
    console.log(window.a); // undefined
