@@ -139,7 +139,7 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    var x;
    for (x in person) {
        text += person[x];
-   } //skrifar ut 'Robert Atli 19'
+   } // skrifar ut 'Robert Atli 19'
    ```
    - _for-of_ virkar ekki með objects og virkar betur með arrays heldur en _for-in_
    ```javascript
@@ -147,5 +147,5 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    for (const stafur of array) {
       console.log(stafur)
    }
-   // Result: a, b, c, d
+   // skrifar ut 'a, b, c, d'
    ```
