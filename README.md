@@ -6,28 +6,28 @@
    
 2. **Hvað gerir _'use strict'_ í JavaScript kóða?**
 
-   Use strict segir browserinum að nota _Strict mode_ sem er minni og öruggari gerð af JavaScript.
+   - Use strict segir browserinum að nota _Strict mode_ sem er minni og öruggari gerð af JavaScript.
    
 3. **Hver er munurinn á _let_ og _var_?**
 
-   _let_ og _var_ eru bæði skilgreindar sem _variables_ og eru nokkuð líkar á þann hátt.
+   - _let_ og _var_ eru bæði skilgreindar sem _variables_ og eru nokkuð líkar á þann hátt.
      ```javascript
      let a = 'aaa';  // sýnilegt allstaðar *globally*
      var b = 'bbb'; // sýnilegt allstaðar *globally*
      ```
-   En t.d. þegar _var_ er notað Globally þá er það _variable_ bætt við í _window_ objectið, hinsvegar er _let_ ekki bætt við í _window_ objectið þegar það er notað eins.
+   - En t.d. þegar _var_ er notað Globally þá er það _variable_ bætt við í _window_ objectið, hinsvegar er _let_ ekki bætt við í _window_ objectið þegar það er notað eins.
    ```javascript
    console.log(window.a); // undefined
    console.log(window.b); // 'bbb'
    ```
-   Þau virka nákvæmlega eins þegar þau eru notuð svona í function.
+   - Þau virka nákvæmlega eins þegar þau eru notuð svona í function.
    ```javascript
    function synidaemi() {
        let a = 'aaa'; // sýnilegt í functioninu
        var b = 'bbb'; // sýnilegt í functioninu
    }
    ```
-   hinsvegar er _var_ sýnilegt fyrir utan for loopuna sem variableið er staðsett í, þegar _let_ er bara sýnilegt innan for loopunar.
+   - hinsvegar er _var_ sýnilegt fyrir utan for loopuna sem variableið er staðsett í, þegar _let_ er bara sýnilegt innan for loopunar.
    ```javascript
    function synidaemi() {
     // daemi er ekki sýnilegt hérna
