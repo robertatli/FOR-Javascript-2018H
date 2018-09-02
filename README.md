@@ -50,3 +50,16 @@
        // daemi2 er sýnilegt hérna
    }
    ```
+4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
+   1. Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
+   ```
+   function daemi1(a, b) {
+    return a * b;
+   }
+   ```
+   2. Það er líka hægt að láta functionin setja sig sjálf í gang
+   ```
+   (function () {
+    var x = "Hello!!";      // I will invoke myself
+   })();
+   ```
