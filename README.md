@@ -52,14 +52,22 @@
    ```
 4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
    1. Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
-   ```
+   ```javascript
    function daemi1(a, b) {
     return a * b;
    }
    ```
    2. Það er líka hægt að láta functionin setja sig sjálf í gang
-   ```
+   ```javascript
    (function () {
-    var x = "Hello!!";      // I will invoke myself
+    var x = "Hæ!!";      // ég kalla á mig sjálfa!
    })();
+   ```
+   3. functions geta verið notaðar sem gildi (value)
+   ```javascript
+   function myFunction(a, b) {
+    return a * b;
+   }
+
+   var x = myFunction(4, 3);
    ```
