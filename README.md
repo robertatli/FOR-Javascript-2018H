@@ -15,6 +15,6 @@
      ```
    En t.d. þegar _var_ er notað Globally þá er það _variable_ bætt við í _window_ objectið, hinsvegar er _let_ ekki bætt við í _window_ objectið þegar það er notað eins.
    ```javascript
-   console.log(window.in); // undefined
-   console.log(window.ad); // 'bbb'
+   console.log(window.a); // undefined
+   console.log(window.b); // 'bbb'
    ```
