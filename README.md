@@ -75,5 +75,17 @@
    ```javascript
    (function() { alert('Hello World'); })(); // þessi function kallar á sjálfa sig eins og var sýnt í dæmi 4.2 hér fyrir ofan.
    ```
-6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá**
-**hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
+6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
+hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
+````javascript
+function foo(){
+   function bar() {
+      return 3;
+   }
+   return bar();
+   function bar() {
+      return 8;
+   }
+}
+alert(foo()); 
+```
