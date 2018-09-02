@@ -12,8 +12,8 @@
 
    _let_ og _var_ eru bæði skilgreindar sem _variables_ og eru nokkuð líkar á þann hátt.
      ```javascript
-     let a = 'aaa';  // globally séð
-     var b = 'bbb'; // globally séð  
+     let a = 'aaa';  // sýnilegt allstaðar *globally*
+     var b = 'bbb'; // sýnilegt allstaðar *globally*
      ```
    En t.d. þegar _var_ er notað Globally þá er það _variable_ bætt við í _window_ objectið, hinsvegar er _let_ ekki bætt við í _window_ objectið þegar það er notað eins.
    ```javascript
@@ -23,30 +23,30 @@
    Þau virka nákvæmlega eins þegar þau eru notuð svona í function.
    ```javascript
    function synidaemi() {
-       let a = 'aaa'; //function block scoped
-       var b = 'bbb'; //function block scoped
+       let a = 'aaa'; // sýnilegt í functioninu
+       var b = 'bbb'; // sýnilegt í functioninu
    }
    ```
    hinsvegar er _var_ sýnilegt fyrir utan for loopuna sem variableið er staðsett í, þegar _let_ er bara sýnilegt innan for loopunar.
    ```javascript
    function synidaemi() {
-    //daemi er ekki sýnilegt hérna
+    // daemi er ekki sýnilegt hérna
 
     for( let daemi = 0; daemi < 10; daemi++ ) {
-        //daemi er bara sýnilegt hérna (og í for() hausinum)
-        //og það er buin til ný daemi variable i hvert skipti sem for loopan spilast
+        // daemi er bara sýnilegt hérna (og í for() hausinum)
+        // og það er buin til ný daemi variable i hvert skipti sem for loopan spilast
     }
 
-    //daemi er ekki sýnilegt hérna
+    // daemi er ekki sýnilegt hérna
    }
 
    function synidaemi2() {
-       //daemi2 er sýnilegt hérna
+       // daemi2 er sýnilegt hérna
 
        for( var daemi2 = 0; daemi2 < 10; daemi2++ ) {
-           //daemi2 is visible to the whole function
+           // daemi2 is visible to the whole function
        }
 
-       //daemi2 er sýnilegt hérna
+       // daemi2 er sýnilegt hérna
    }
    ```
