@@ -27,7 +27,7 @@
        var b = 'bbb'; //function block scoped
    }
    ```
-   hinsvegar 
+   hinsvegar er _var_ sýnilegt fyrir utan for loopuna sem variableið er staðsett í, þegar _let_ er bara sýnilegt innan for loopunar.
    ```javascript
    function synidaemi() {
     //daemi er ekki sýnilegt hérna
