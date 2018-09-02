@@ -77,7 +77,7 @@
    ```
 6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
 hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
-   - asd
+   - function eru fyrsta sem þýðandinn les og sýðan returnar hann útkomunni, og þar sem það er buið til bar() functionið tvisvar þá tekur seinna bar()-ið yfir fyrra og því returnar foo() 8.
    ```javascript
    function foo(){
       function bar() {
@@ -90,3 +90,27 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    }
    alert(foo()); 
    ```
+   - Svona ætti kóðinn frekar að lýta út.
+   ```javascript
+   function foo(){
+      function bar() {
+         return 3;
+      }
+      function bar() {
+         return 8;
+      }
+      return bar();
+   }
+   alert(foo());
+   ```
+   - En hann væri ennþá hreinni svona:
+   ```javascript
+   function foo(){
+      function bar() {
+         return 8;
+      }
+      return bar();
+   }
+   alert(foo());
+   ```
+7. **Hver er munurinn á for, for-in og for-of lykkjum?**
