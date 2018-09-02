@@ -5,9 +5,11 @@
    - Null er gildi í breytu sem táknar ekkert gildi.
    
    
+   
 2. **Hvað gerir _'use strict'_ í JavaScript kóða?**
 
    - Use strict segir browserinum að nota _Strict mode_ sem er minni og öruggari gerð af JavaScript.
+   
    
    
 3. **Hver er munurinn á _let_ og _var_?**
@@ -53,6 +55,7 @@
    }
    ```
    
+   
 4. **Skilgreindu fall á þrjá mismunandi vegu með kóðasýnidæmi.**
    - Fyrst er einfalda leiðin til að skilgreyna function og sem er einnig oftast notað.
    ```javascript
@@ -74,6 +77,7 @@
 
    var x = daemi(4, 3);
    ```
+   
    
 5. **Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?**
    ```javascript
@@ -118,5 +122,6 @@ hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útk
    }
    alert(foo());
    ```
+   
    
 7. **Hver er munurinn á for, for-in og for-of lykkjum?**
