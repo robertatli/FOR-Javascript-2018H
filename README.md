@@ -1,1 +1,1 @@
-# FOR-Javascript-2018H
+# FORR3JS05DU ## Verkefni 1
