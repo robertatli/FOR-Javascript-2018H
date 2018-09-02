@@ -73,5 +73,7 @@
    ```
 5. **Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?**
    ```javascript
-   (function() { alert('Hello World'); })(); 
+   (function() { alert('Hello World'); })(); // þessi function kallar á sjálfa sig eins og var sýnt í dæmi 4.2 hér fyrir ofan.
    ```
+6. **Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá**
+**hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandanum. Afhverju er útkoman 8? Útskýrðu.**
