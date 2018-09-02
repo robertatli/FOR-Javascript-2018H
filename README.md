@@ -4,10 +4,12 @@
    1. Undefined þýðir að breyta sem hefur verið búin til hefur ekki verið gefin gildi.
    2. Null er gildi í breytu sem táknar ekkert gildi.
    
-2. **Hvað gerir _'use strict'_ í JavaScript kóða?**\n
+2. **Hvað gerir _'use strict'_ í JavaScript kóða?**
+
    Use strict segir browserinum að nota _Strict mode_ sem er minni og öruggari gerð af JavaScript.
    
-3. **Hver er munurinn á _let_ og _var_?**\n
+3. **Hver er munurinn á _let_ og _var_?**
+
    _let_ og _var_ eru bæði skilgreindar sem _variables_ og eru nokkuð líkar á þann hátt.
      ```javascript
      let a = 'aaa';  // globally séð
