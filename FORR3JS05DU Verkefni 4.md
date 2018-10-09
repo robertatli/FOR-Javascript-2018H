@@ -7,7 +7,7 @@
 * Leikurinn snýst um að skjóta smástirni(sem lýta út eins og boltar) frá geimskipinu þínu og ekki láta smástirnin hitta þig
 * þú vinnur leikinn ef þú sprengir öll smástirnin og smástirnin hitta þig ekki.
 
-##### Myndvandsupptaka af spilun leiks
+##### Myndbandsupptaka af spilun leiks
 
 https://youtu.be/7_ZONk_lttU
 
