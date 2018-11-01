@@ -27,3 +27,18 @@
          col.style.backgroundColor = 'red';
        }
     ```
+2. Events
+
+    a. Browser events
+    1. Hide self
+    ```javascript
+         let text = document.getElementById('text'); 
+
+        hider.addEventListener("click", hideText, false);
+
+        function hideText() {
+          text.textContent = "";
+        }
+    ```
+    2. Fyrsti handlerinn triggerast því hann er ekki removaður með ````removeEventListener```. Vegna þess að hann er að remova nyju functioni sem lytur eins ut og fyrra functionið. það þyrfti að hafa verið buið að geyma reference i functionið til að kalla á sama function.
+    
