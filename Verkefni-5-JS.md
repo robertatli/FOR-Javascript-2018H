@@ -2,7 +2,9 @@
 #### Róbert Atli Svavarsson
 
 1. DOM
+
   a. Walking the DOM
+  
     1. DOM children
     ```javascript
       document.body.childnodes[1];
