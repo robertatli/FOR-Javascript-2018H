@@ -13,6 +13,7 @@
       document.body.lastelementchild.lastelementchild;
     ```
     2. The sibling question
+    
       a. Já, elementið ```elem.lastchild``` er alltaf síðasta elementið, það hefur engann ```nextsibling```
     3. Select all diagonal squares
     ````javascript
