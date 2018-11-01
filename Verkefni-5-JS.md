@@ -18,7 +18,7 @@
         
         b. Nei, því ```elem.children[0]``` er fyrsta childið ásamt elementum en það geta verið önnur nodes sem eru ekki element, þannig ```previousSibling``` gæti verið text node.
     3. Select all diagonal squares
-    ````javascript
+    ```javascript
       let table = document.body.firstElementChild;
 
        for(let row of table.rows)
